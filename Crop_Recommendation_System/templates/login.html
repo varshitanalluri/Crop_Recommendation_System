@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrowAdvisor - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-section">
+
+        {% if login_error %}
+        <div class="error-message">
+            <p>Username or password is incorrect.</p>
+        </div>
+        {% endif %}
+
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <input type="submit" value="Login">
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GrowAdvisor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

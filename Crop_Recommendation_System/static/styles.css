@@ -1,0 +1,111 @@
+/* Body Styles */
+body {
+    background-color: #ccffcc; /* Light green background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Dark green header background color */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Landing Page Section Styles */
+.landing-section {
+    background-color: #d9f8d1; /* Light green section background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.landing-section h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Login and Register Pages */
+.login-section, .register-section {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff; /* White section background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h1, .register-section h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Green submit button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Result Styles */
+.result-section {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Dark green footer background color */
+    color: #fff;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrowAdvisor - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="result-section">
+        <h1>Recommended Crop</h1>
+        <p>The recommended crop for your input is: <strong>{{ crop_name }}</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GrowAdvisor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

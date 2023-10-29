@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrowAdvisor - Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register-section">
+
+        <h1>Registration Form</h1>
+
+        {% if registration_successful %}
+            <p class="success-message">Registration successful! You can now log in to continue.</p>
+        {% endif %}
+
+        <form action="/register" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <input type="submit" value="Register">
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GrowAdvisor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
